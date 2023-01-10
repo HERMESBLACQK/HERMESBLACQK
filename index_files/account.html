@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>account page</title>
+  <link href="https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap" rel=stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"> FASTTRACKSHOP&#8482;</a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>
+            <li><a href="account.html">ACCOUNT</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="images/cart2 (2).png" class="menu-icon2">
+         </a>
+        <img src="images/menu (1).png" class="menu-icon" onclick="menutoggle()">
+
+      </div> 
+    </div>
+  </div>
+ <!----------account page------>
+     
+<div class="account-page">
+<div class="container">
+<div class="row">
+<div class="col-2">
+<img src="images/sport-35493.png" width="100%">
+</div>
+<div class="col-2">
+ <div class="form-container">
+  <div class="form-btn">
+    <span onclick="login()">Login</span>
+    <span onclick="register()">Register</span>
+    <hr id="indicator">
+  </div>
+  <form id="Loginform">
+    <input type="text" placeholder="Username">
+    <input type="text"placeholder=password>
+    <button type="submit" class="btn">Login</button>
+    <a href="">forgot password</a>
+  </form>
+  <form id="Regform">
+    <input type="text" placeholder="Username">
+    <input type="email"placeholder=email>
+    <input type="text"placeholder=password>
+    <button type="submit" class="btn">Register</button>
+    <a href="">forgot password</a>
+  </form>
+  
+ </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+  <!-------footer------->
+  <div class="footer"> 
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <div class="app-logo">
+            <img src="images/apple.png" alt="">
+            <img src="images/google2.png" alt="">
+          </div>
+          
+          <p>Download App For Android and ios mobile phone</p>
+
+        </div>
+        <br>
+        <br>
+        <div class="footer-col-2">
+          <img src="logo/visa.jpg">
+          <img src="logo/m-cash.jpg">
+          <img src="logo/logo-_031_.jpg">
+          <img src="logo/logo-_051b.jpg">
+        
+     
+      <!-- <p>To make sure we bring smiles to faces </p> -->
+    </div>
+        <!-- <div class="footer-col-2">
+          <img src="images/cart.png">
+          <p>To make sure we bring smiles to faces </p>
+        </div> -->
+        <div class="footer-col-3">
+          <h3>Useful LInks</h3>
+          <ul>
+            <li>Coupons</li>
+            <br>
+            <li>Blog post</li>
+            <br>
+            <li>Return Policy</li>
+            <br>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>FAcebook</li>
+            <br>
+            <li>Twitter</li>
+            <br>
+            <li>Instagram</li>
+            <br>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2022 - BLUEWHALETECH&#8482;</p>
+    </div>
+    </div>
+    <!-------js for toggle menu--------->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle()
+      {
+        if(MenuItems.style.maxHeight == "0px")
+
+        {
+        MenuItems.style.maxHeight ="300px";
+      }
+      else{
+        MenuItems.style.maxHeight = "0px";
+      }
+
+      }
+      
+
+      
+
+    </script>
+
+     <!-------js for toggle form--------->
+     <script>
+var Loginform = document.getElementById("Loginform");
+var Regform = document.getElementById("Regform");
+var indicator = document.getElementById("indicator");
+
+function register() {
+  Regform.style.transform = "translateX(0px)";
+  Loginform.style.transform = "translateX(0px)";
+  indicator.style.transform = "translateX(100px)";
+
+
+}
+function login() {
+  Regform.style.transform = "translateX(300px)";
+ Loginform.style.transform = "translateX(300px)";
+ indicator.style.transform = "translateX(0px)";
+
+}
+
+     </script>
+</body>
+
+</html>
