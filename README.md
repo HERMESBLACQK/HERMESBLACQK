@@ -2,7 +2,7 @@
 - 👀 I’m interested in ...programming 
 - 🌱 I’m currently a web developer 
 - 💞️ I’m looking to collaborate on ...projects 
-- 📫 How to reach me ...hermestechhhub@gmail.com
+- 📫 How to reach me ...hermestechhub@gmail.com
 - 
 
 <!---
